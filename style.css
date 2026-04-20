@@ -41,40 +41,19 @@ span#test-typing {
     color: #3b82f6;
 }
 
-
-.loader-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 220px;
+@keyframes rotate-logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
-
-
-.loader-circle {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 4px solid transparent;
-    border-top: 4px solid #00A2E8; 
-    border-radius: 50%;
-    animation: spin 1.5s linear infinite;
-}
-
 
 .loader-content img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    z-index: 1; 
+    animation: rotate-logo 2s linear infinite;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 
 .navbar a.my_logo {
     width: 10%;
