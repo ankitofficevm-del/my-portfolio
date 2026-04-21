@@ -855,3 +855,17 @@ footer a {
         filter: grayscale(1);
     }
 }
+
+@media(min-width: 240px) and (max-width: 767px) {
+
+    .navbar a.my_logo {
+        width: 25%;
+     }
+}
+
+@media(min-width: 768px) and (max-width: 999px) {
+
+    .navbar a.my_logo {
+        width: 15%;
+     }
+}
