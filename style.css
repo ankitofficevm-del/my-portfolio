@@ -146,6 +146,18 @@ nav.navbar.navbar-expand-lg.sticky-top.custom-nav {
 section#home {
     padding: 30px 15px;
     position: relative;
+    z-index: 999;
+}
+
+section#home:after {
+    content: '';
+    background: url('./back.png');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
 a.navbar-brand.logo {
