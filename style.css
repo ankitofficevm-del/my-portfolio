@@ -31,6 +31,9 @@ body {
     overflow-x: hidden;
 }
 
+.navbar a.my_logo:focus-visible {
+    outline: 0px !important;
+}
 
 .skills-section {
     padding-top: 60px;
