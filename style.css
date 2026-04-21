@@ -1,14 +1,14 @@
 :root {
     --bg: #000000;
     --text: #ffffff;
-    --accent: #3b82f6;
+    --accent: #2CD6AF;
     --card-bg: #111111;
     --border: rgba(255, 255, 255, 0.1);
     --cursor: #ffffff;
-    --purple-main: #3b82f6;
+    --purple-main: #2CD6AF;
     --dark-bg: #0a0a0a;
     --nav-logo-color: #fff;
-    --primary-color: #3b82f6;
+    --primary-color: #2CD6AF;
     --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -16,7 +16,7 @@
 body.light-mode {
     --bg: #ffffff;
     --text: #000000;
-    --accent: #3b82f6;
+    --accent: #2CD6AF;
     --card-bg: #f9fafb;
     --border: rgba(0, 0, 0, 0.08);
     --cursor: #000000;
@@ -29,6 +29,10 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     transition: var(--transition);
     overflow-x: hidden;
+}
+
+.contact-info a.text-decoration-none {
+    color: #2CD6AF;
 }
 
 .light-mode .content-box p.lead {
@@ -838,8 +842,12 @@ footer a {
 }
 
 .hover-link:hover {
-    color: #3b82f6 !important;
+    color: #2CD6AF !important;
     padding-left: 5px;
+}
+
+.contact-info h6.mb-0 {
+    font-weight: 500 !important;
 }
 
 .social-icon {
