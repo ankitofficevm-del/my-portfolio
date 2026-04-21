@@ -31,6 +31,22 @@ body {
     overflow-x: hidden;
 }
 
+.light-mode .content-box p.lead {
+    color: #fff;
+}
+
+.light-mode .content-box a.btn.btn-outline-accent {
+    color: #fff;
+}
+
+.light-mode .content-box h1.display-3 {
+    color: #fff;
+}
+
+.light-mode .content-box h4.greeting {
+    color: #fff;
+}
+
 .navbar a.my_logo:focus-visible {
     outline: 0px !important;
 }
