@@ -31,6 +31,32 @@ body {
     overflow-x: hidden;
 }
 
+#scrollToTop {
+  display: none; /* Shuruat mein hidden */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2CD6AF; /* Aapka color */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%; /* Round shape */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+}
+
+#scrollToTop:hover {
+  background-color: #24b896; /* Thoda dark shade hover ke liye */
+  transform: translateY(-5px); /* Hover par upar move hoga */
+}
+
 .contact-info a.text-decoration-none {
     color: #2CD6AF;
 }
@@ -242,7 +268,8 @@ h1.display-3.fw-bolder.mb-4 {
     max-width: 400px;
     aspect-ratio: 1/1;
     background: var(--card-bg);
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    /* border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; */
+    border-radius: 50%;
     overflow: hidden;
     border: 1px solid var(--border);
     transition: 0.5s ease-in-out;
@@ -251,6 +278,7 @@ h1.display-3.fw-bolder.mb-4 {
 .blob-shape:hover {
     border-radius: 50%;
     border-color: var(--accent);
+    border-width: 4px;
 }
 
 
