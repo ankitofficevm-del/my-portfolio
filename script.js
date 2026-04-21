@@ -398,3 +398,23 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     // 5. New tab mein WhatsApp open karna
     window.open(whatsappUrl, '_blank');
 });
+
+// scroll to top js 
+const scrollBtn = document.getElementById("scrollToTop");
+
+// Jab user 100px scroll kare tab button dikhao
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+// Click karne par upar le jane ke liye
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // Smooth scrolling effect
+  });
+});
