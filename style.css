@@ -23,12 +23,12 @@ body.light-mode {
     --nav-logo-color: #000000;
 }
 
-body {
-    -webkit-user-select: none; /* Chrome, Safari, Opera */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-    user-select: none;         /* Standard syntax */
-}
+/* body {
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;         
+} */
 
 body {
     background-color: var(--bg);
