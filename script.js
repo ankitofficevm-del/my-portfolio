@@ -444,37 +444,26 @@ scrollBtn.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
-    const sections = document.querySelectorAll("section[id]"); // Ensure your sections use <section id="home"> etc.
+    const sections = document.querySelectorAll("section[id]"); // Sirf wahi sections jinme ID hai
 
-    // 1. Click Highlight: Click karne par active class lagana
-    navLinks.forEach(link => {
-        link.addEventListener("click", function () {
-            navLinks.forEach(l => l.classList.remove("active"));
-            this.classList.add("active");
-        });
-    });
+    window.addEventListener("scroll", () => {
+        let current = "";
 
-    // 2. Scroll Highlight: Scroll karne par section detect karna
-    const observerOptions = {
-        root: null,
-        threshold: 0.6, // Jab section 60% screen par dikhega tab active hoga
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const id = entry.target.getAttribute("id");
-                navLinks.forEach((link) => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === `#${id}`) {
-                        link.classList.add("active");
-                    }
-                });
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            // Yahan hum check kar rahe hain ki scroll position kis section ke andar hai
+            if (pageYOffset >= sectionTop - 150) { // 150px offset header ke liye
+                current = section.getAttribute("id");
             }
         });
-    }, observerOptions);
 
-    sections.forEach((section) => {
-        observer.observe(section);
+        navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+                link.classList.add("active");
+            }
+        });
     });
 });
