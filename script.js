@@ -444,7 +444,7 @@ scrollBtn.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
-    const sections = document.querySelectorAll("section"); // Ensure your sections use <section id="home"> etc.
+    const sections = document.querySelectorAll("section[id]"); // Ensure your sections use <section id="home"> etc.
 
     // 1. Click Highlight: Click karne par active class lagana
     navLinks.forEach(link => {
