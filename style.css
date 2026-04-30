@@ -115,8 +115,8 @@ span#test-typing {
 
 .loader-content img {
     animation: rotate-logo 2s linear infinite;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 
