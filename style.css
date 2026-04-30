@@ -21,13 +21,6 @@ body.light-mode {
     --nav-logo-color: #000000;
 }
 
-/* body {
-    -webkit-user-select: none; 
-    -moz-user-select: none;    
-    -ms-user-select: none;     
-    user-select: none;         
-} */
-
 html {
     scroll-behavior: smooth;
 }
@@ -51,7 +44,7 @@ body {
 }
 
 #scrollToTop {
-  display: none; /* Shuruat mein hidden */
+  display: none; 
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -59,7 +52,7 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #2CD6AF; /* Aapka color */
+  background-color: #2CD6AF; 
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -72,8 +65,8 @@ body {
 }
 
 #scrollToTop:hover {
-  background-color: #24b896; /* Thoda dark shade hover ke liye */
-  transform: translateY(-5px); /* Hover par upar move hoga */
+  background-color: #24b896; 
+  transform: translateY(-5px); 
 }
 
 .contact-info a.text-decoration-none {
@@ -209,7 +202,7 @@ p.lead b {
     background-repeat: no-repeat;
 }
 
-body.dark-mode.light-mode {
+body.dark-mode.light-mode .logo-box {
     background-image: url('./lightmode.png');
 }
 
