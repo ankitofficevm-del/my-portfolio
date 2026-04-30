@@ -323,3 +323,24 @@ themeToggle.addEventListener('click', () => {
         logoImg.src = "./myname.png"; 
     }
 });
+const currentTheme = localStorage.getItem('theme');
+const darkImg = document.querySelector('.dark-img');
+const lightImg = document.querySelector('.light-img');
+if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    if(darkImg) darkImg.style.display = 'block';
+    if(lightImg) lightImg.style.display = 'none';
+} else {
+    document.body.classList.remove('dark-mode');
+    if(darkImg) darkImg.style.display = 'none';
+    if(lightImg) lightImg.style.display = 'block';
+}
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }, 2000);
+});
