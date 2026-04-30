@@ -206,7 +206,7 @@ p.lead b {
     background-repeat: no-repeat;
 }
 
-body.dark-mode.light-mode .logo-box {
+body.light-mode .logo-box {
     background-image: url('./lightmode.png');
 }
 
