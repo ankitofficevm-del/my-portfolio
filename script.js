@@ -318,7 +318,7 @@ themeToggle.addEventListener('click', () => {
         if (document.body.classList.contains('dark-theme')) {
             logoImg.src = "./myname.png"; 
         } else {
-            logoImg.src = "./myname.png";
+            logoImg.src = "./lightmode.png";
         }
     }, 10); 
 });
