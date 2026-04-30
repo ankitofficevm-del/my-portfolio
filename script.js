@@ -317,9 +317,9 @@ themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
     if (document.body.classList.contains('dark-theme')) {
         console.log("Dark Mode Active");
-        logoImg.src = "./myname.png";
+        logoImg.src = "./lightmode.png";
     } else {
         console.log("Light Mode Active");
-        logoImg.src = "./lightmode.png"; 
+        logoImg.src = "./myname.png"; 
     }
 });
