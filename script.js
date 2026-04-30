@@ -323,3 +323,25 @@ themeToggle.addEventListener('click', () => {
         logoImg.src = "./myname.png"; 
     }
 });
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    const body = document.body;
+    const darkImg = document.querySelector('.dark-img');
+    const lightImg = document.querySelector('.light-img');
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-mode');
+        darkImg.style.display = 'block';
+        lightImg.style.display = 'none';
+    } else {
+        body.classList.remove('dark-mode');
+        darkImg.style.display = 'none';
+        lightImg.style.display = 'block';
+    }
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }, 2000);
+});
