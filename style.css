@@ -11,8 +11,6 @@
     --primary-color: #2CD6AF;
     --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 body.light-mode {
     --bg: #ffffff;
     --text: #000000;
@@ -203,7 +201,17 @@ p.lead b {
     width: 0;
 }
 
+.logo-box {
+    width: 150px; 
+    height: 50px;
+    background-image: url('./myname.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+body.dark-mode.light-mode {
+    background-image: url('./lightmode.png');
+}
 
 .text-accent {
     color: var(--accent);
