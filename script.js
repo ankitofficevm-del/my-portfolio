@@ -314,11 +314,12 @@ document.addEventListener("DOMContentLoaded", function () {
 const themeToggle = document.getElementById('theme-toggle');
 const logoImg = document.getElementById('logo-img');
 themeToggle.addEventListener('click', () => {
-    setTimeout(() => {
-        if (document.body.classList.contains('dark-theme')) {
-            logoImg.src = "./myname.png"; 
-        } else {
-            logoImg.src = "./lightmode.png";
-        }
-    }, 10); 
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+        console.log("Dark Mode Active");
+        logoImg.src = "./myname.png";
+    } else {
+        console.log("Light Mode Active");
+        logoImg.src = "./lightmode.png"; 
+    }
 });
