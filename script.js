@@ -311,3 +311,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+const themeToggle = document.getElementById('theme-toggle');
+const logoImg = document.getElementById('logo-img');
+themeToggle.addEventListener('click', () => {
+    setTimeout(() => {
+        if (document.body.classList.contains('dark-theme')) {
+            logoImg.src = "./myname.png"; 
+        } else {
+            logoImg.src = "./myname.png";
+        }
+    }, 10); 
+});
