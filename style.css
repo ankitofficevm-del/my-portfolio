@@ -75,6 +75,14 @@ body {
     color: #2CD6AF;
 }
 
+.timeline-content p.mb-0.text-muted {
+    color: #fff !important;
+}
+
+.light-mode .timeline-content p.mb-0.text-muted {
+    color: #000 !important;
+}
+
 .light-mode .content-box p.lead {
     color: #fff;
 }
