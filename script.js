@@ -344,3 +344,11 @@ window.addEventListener('load', function() {
         }, 500);
     }, 2000);
 });
+// Version check logic
+const currentVersion = "1.1";
+const savedVersion = localStorage.getItem('app_version');
+
+if (savedVersion !== currentVersion) {
+    localStorage.setItem('app_version', currentVersion);
+    window.location.reload(true); 
+}
